@@ -1,7 +1,9 @@
+# RPI Student Senate website
+#          #WTG
 version: "3"
 services: 
   web:
-    build: .
+    image: wordpress:latest
     links: 
      - "db:database"
     working_dir: /var/www/html
