@@ -19,13 +19,6 @@
 //define('WP_CACHE', true); //Added by WP-Cache Manager
 // define( 'WPCACHEHOME', '/home/stugov/public_html/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
 define('DISABLE_CACHE', true);
-
-define('FORCE_SSL_ADMIN', true);
-// in some setups HTTP_X_FORWARDED_PROTO might contain 
-// a comma-separated list e.g. http,https
-// so check for https existence
-if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
-	   $_SERVER['HTTPS']='on';
 	   
 // ** Heroku Postgres settings - from Heroku Environment ** //
 $db = parse_url($_ENV["DATABASE_URL"]);
@@ -92,6 +85,17 @@ if ( !defined('ABSPATH') )
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
 
+define('FORCE_SSL_ADMIN', true);
+// in some setups HTTP_X_FORWARDED_PROTO might contain 
+// a comma-separated list e.g. http,https
+// so check for https existence
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
+	   $_SERVER['HTTPS']='on';
+
+
+
+define('WP_HOME', 'https://sg.rpi.edu');
+define('WP_SITEURL', 'https://sg.rpi.edu');
 /* Set up secret wp-admin folder */
 // define('WP_ADMIN_DIR', 'stugov-backend');
 // define( 'ADMIN_COOKIE_PATH', SITECOOKIEPATH . WP_ADMIN_DIR);
