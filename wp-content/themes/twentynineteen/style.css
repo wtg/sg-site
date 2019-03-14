@@ -1,0 +1,15 @@
+/*
+Theme Name: Tersus
+Theme URI: http://github.com/splorp/tersus/
+Description: An achingly simple WordPress theme without all the usual cruft.
+Author: Chris Harrison, Grant Hutchinson, Dan Rubin, Andy van der Raadt
+Author URI: http://tersustheme.com/
+Version: 0.3.1
+License: GNU General Public License
+License URI: https://raw.github.com/splorp/tersus/master/license.txt
+Tags: one-column, full-width-template, post-formats, theme-options, microformats, threaded-comments
+*/
+
+@import "style/css/reset.css";
+@import "style/css/base.css";
+@import "style/css/core.css";

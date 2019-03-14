@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$family-sans-serif: "Open sans", sans-serif;
+$red: #ED1C24;
+$link: $red;
+$black: #000;
+$navbar-item-img-max-height: 40px;
+$primary: $red;
+
+@import "../../node_modules/bulma/bulma.sass";
+
+// Import the components/elements you need here.
+
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
