@@ -78,22 +78,6 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', true);
 
-/* Multisite */
-define('WP_ALLOW_MULTISITE', false);
-
-define('MULTISITE', false);
-define('SUBDOMAIN_INSTALL', false);
-//define('DOMAIN_CURRENT_SITE', 'ru-webtech01.union.rpi.edu:8000');
-define('DOMAIN_CURRENT_SITE', 'sg.rpi.edu');
-define('PATH_CURRENT_SITE', '/');
-define('SITE_ID_CURRENT_SITE', 1);
-define('BLOG_ID_CURRENT_SITE', 1);
-
-/* That's all, stop editing! Happy blogging. */
-
-define('WP_HOME', 'https://sg.rpi.edu');
-define('WP_SITEURL', 'https://sg.rpi.edu');
-
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
