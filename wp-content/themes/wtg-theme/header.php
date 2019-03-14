@@ -74,6 +74,6 @@
         </div>
       </div>
     </nav>
-    <section style="height: calc( 100% - 270px);" class="section">
+    <section class="section">
       <div class="container">
         <div class="columns">
