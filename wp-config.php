@@ -78,13 +78,6 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', true);
 
-/** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
-
-/** Sets up WordPress vars and included files. */
-require_once(ABSPATH . 'wp-settings.php');
-
 define('FORCE_SSL_ADMIN', true);
 // in some setups HTTP_X_FORWARDED_PROTO might contain 
 // a comma-separated list e.g. http,https
@@ -92,10 +85,16 @@ define('FORCE_SSL_ADMIN', true);
 if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
 	   $_SERVER['HTTPS']='on';
 
-
-
 define('WP_HOME', 'https://sg.rpi.edu');
 define('WP_SITEURL', 'https://sg.rpi.edu');
+
+/** Absolute path to the WordPress directory. */
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(__FILE__) . '/');
+
+/** Sets up WordPress vars and included files. */
+require_once(ABSPATH . 'wp-settings.php');
+
 /* Set up secret wp-admin folder */
 // define('WP_ADMIN_DIR', 'stugov-backend');
 // define( 'ADMIN_COOKIE_PATH', SITECOOKIEPATH . WP_ADMIN_DIR);
