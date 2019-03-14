@@ -7,6 +7,12 @@
 #   docker image
 FROM wordpress:latest
 
-COPY ./wp-content /var/ww/html/wp-content
-
 COPY ./wp-config.php /var/www/html/wp-config.php
+
+RUN ls /usr/src/wordpress
+
+COPY copywp.sh .
+
+RUN sh copywp.sh
+
+COPY ./wp-content /var/www/html/wp-content
