@@ -6,7 +6,7 @@
  */
 ?>
 <form role="search" method="get" id="searchform" class="searchform" action="<?php echo site_url(); ?>">
-  <div class="field has-addons">
+  <div style="margin-bottom: 10px;" class="field has-addons">
     <div class="control is-expanded">
       <input type="text" name="s" id="s" class="input" placeholder="Search" required>
     </div>
