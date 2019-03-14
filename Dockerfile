@@ -13,6 +13,8 @@ RUN ls /usr/src/wordpress
 
 COPY copywp.sh .
 
+COPY .htaccess .
+
 RUN sh copywp.sh
 
 COPY ./wp-content /var/www/html/wp-content
