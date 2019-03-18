@@ -25,7 +25,7 @@ get_header();
             the_date( '', '/ ' );
             ?> / <a href="<?php the_permalink(); ?>#comments"><?php comments_number( '0 comments', '1 comment', '% comments' ); ?></a>
           </p>
-					<?php the_excerpt(); ?>
+					<?php the_content(); ?>
         </div>
 	      <?php
 	      $tags = get_tags();
